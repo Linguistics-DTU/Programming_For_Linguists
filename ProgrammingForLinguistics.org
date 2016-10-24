@@ -30,6 +30,16 @@
 *** Later on we just move on to FileSystem/API/WebPage based work
 * 4 - Alphabet
 ** Notes
+** The ASCII value of a character
+#+BEGIN_SRC clojure
+ (int \汉)
+
+
+#+END_SRC
+
+#+RESULTS:
+: 27721
+
 ** Alphanumeric characters in the word
 *** cuerdas - only alphabets in the words
 
