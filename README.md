@@ -25,4 +25,5 @@ deeply intertwined _and_ simplified in LISP and Linguistics. Plus, I just unders
 
 ## Screenshot of how the work will loop like
 
-[[Screenshot][./scheenshot.png]]
+
+![Screenshot](./screenshot.png)
