@@ -1,0 +1,136 @@
+* 1 - Generic Introduction to Programming
+** Notes
+*** 
+* 2 - Introduction to Clojure
+** Notes
+* 3 - Setting up the Lab
+** Notes
+*** Setting up the Clojure and focusing initially only on the REPL
+*** Later on we just move on to FileSystem/API/WebPage based work
+* 4 - Alphabet
+** Notes
+* 5 - Word
+** Notes
+** DEFINE a word
+*** defining a simple word
+#+BEGIN_SRC clojure
+
+(def word "word")
+
+#+END_SRC
+
+#+RESULTS:
+: #'user/word
+
+** INDEX of an alphabet in a word
+
+*** using the index of the alphabet
+#+BEGIN_SRC clojure
+(.indexOf  word "o")
+
+#+END_SRC
+
+#+RESULTS:
+: 1
+
+*** find the LAST index of a character
+#+BEGIN_SRC clojure
+
+
+#+END_SRC
+** LENGTH of a word
+
+*** get the length of a word
+#+BEGIN_SRC clojure
+(.length  word)
+
+#+END_SRC
+
+#+RESULTS:
+: 4
+
+*** another way to check if a string is empty
+#+BEGIN_SRC clojure
+(.isEmpty word)
+
+#+END_SRC
+
+#+RESULTS:
+: false
+
+** Get a SUBWORD
+
+*** simple subword based on an index-range SUBSTRING
+#+BEGIN_SRC clojure
+
+(.substring word 1 3)
+
+#+END_SRC
+
+#+RESULTS:
+: or
+
+*** SUBSEQUENCE
+
+#+BEGIN_SRC clojure
+(.subSequence word 1 3)
+#+END_SRC
+
+#+RESULTS:
+: or
+
+** Case of a word
+*** uppercase
+#+BEGIN_SRC clojure
+(.toUpperCase word)
+
+#+END_SRC
+
+#+RESULTS:
+: WORD
+
+*** lowercase
+#+BEGIN_SRC clojure
+(.toLowerCase word)
+
+#+END_SRC
+
+#+RESULTS:
+: word
+
+** Dealing with whitespaces
+*** trim
+#+BEGIN_SRC clojure
+(.trim "   word  ")
+
+#+END_SRC
+
+#+RESULTS:
+: word
+** Words to Character Arrays
+
+Here, the (.toCharArray ) method gives us a Java Array object
+
+we can deal with an Array object using ( get ) method from Clojure
+
+#+BEGIN_SRC clojure
+
+(get (.toCharArray "word") 0)
+
+#+END_SRC
+
+#+RESULTS:
+: \w
+* 6 - Sentences
+** Splitting a sentence
+#+BEGIN_SRC clojure
+
+(get (.split "name is bond" " ") 2)
+
+
+#+END_SRC
+
+#+RESULTS:
+: bond
+
+* Regular Expressions
