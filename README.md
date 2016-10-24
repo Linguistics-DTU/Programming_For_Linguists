@@ -16,7 +16,7 @@ Because I really felt that I need to make a language my own,
 I know that there's Python, there's Haskell and there's Perl but to my mind there's no better mother tongue than LISP. 
 And Clojure with it's Java heritage and JavaScript horizon is the one for me.
 
-" LISP is not a language, it's building material " - Alan Kay
+`" LISP is not a language, it's building material " - Alan Kay`
 
 ## WHY Linguistics?
 
