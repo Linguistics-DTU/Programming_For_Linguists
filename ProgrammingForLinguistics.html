@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-10-24 Mon 18:13 -->
+<!-- 2016-10-24 Mon 19:15 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title></title>
@@ -94,6 +94,12 @@
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   /*]]>*/-->
 </style>
+<link rel="stylesheet" type="text/css" href="./org-html-themes/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="./org-html-themes/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="./org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -174,83 +180,100 @@ for the JavaScript code in this tag.
 </li>
 </ul>
 </li>
-<li><a href="#orgheadline30">4. 4 - Alphabet</a>
+<li><a href="#orgheadline32">4. 4 - Alphabet</a>
 <ul>
 <li><a href="#orgheadline29">4.1. Notes</a></li>
+<li><a href="#orgheadline31">4.2. Alphanumeric characters in the word</a>
+<ul>
+<li><a href="#orgheadline30">4.2.1. cuerdas - only alphabets in the words</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline51">5. 5 - Word</a>
-<ul>
-<li><a href="#orgheadline31">5.1. Notes</a></li>
-<li><a href="#orgheadline33">5.2. DEFINE a word</a>
-<ul>
-<li><a href="#orgheadline32">5.2.1. defining a simple word</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline36">5.3. INDEX of an alphabet in a word</a>
+<li><a href="#orgheadline56">5. 5 - Word</a>
 <ul>
-<li><a href="#orgheadline34">5.3.1. using the index of the alphabet</a></li>
-<li><a href="#orgheadline35">5.3.2. find the LAST index of a character</a></li>
+<li><a href="#orgheadline33">5.1. Notes</a></li>
+<li><a href="#orgheadline35">5.2. DEFINE a word</a>
+<ul>
+<li><a href="#orgheadline34">5.2.1. defining a simple word</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline39">5.4. LENGTH of a word</a>
+<li><a href="#orgheadline38">5.3. INDEX of an alphabet in a word</a>
 <ul>
-<li><a href="#orgheadline37">5.4.1. get the length of a word</a></li>
-<li><a href="#orgheadline38">5.4.2. another way to check if a string is empty</a></li>
+<li><a href="#orgheadline36">5.3.1. using the index of the alphabet</a></li>
+<li><a href="#orgheadline37">5.3.2. find the LAST index of a character</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline42">5.5. Get a SUBWORD</a>
+<li><a href="#orgheadline41">5.4. LENGTH of a word</a>
 <ul>
-<li><a href="#orgheadline40">5.5.1. simple subword based on an index-range SUBSTRING</a></li>
-<li><a href="#orgheadline41">5.5.2. SUBSEQUENCE</a></li>
+<li><a href="#orgheadline39">5.4.1. get the length of a word</a></li>
+<li><a href="#orgheadline40">5.4.2. native- empty?</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline45">5.6. Case of a word</a>
+<li><a href="#orgheadline44">5.5. Get a SUBWORD</a>
 <ul>
-<li><a href="#orgheadline43">5.6.1. uppercase</a></li>
-<li><a href="#orgheadline44">5.6.2. lowercase</a></li>
+<li><a href="#orgheadline42">5.5.1. native - index-range SUBSTRING</a></li>
+<li><a href="#orgheadline43">5.5.2. native - SUBSEQUENCE</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline47">5.7. Dealing with whitespaces</a>
+<li><a href="#orgheadline47">5.6. Case of a word</a>
 <ul>
-<li><a href="#orgheadline46">5.7.1. trim</a></li>
+<li><a href="#orgheadline45">5.6.1. native - uppercase</a></li>
+<li><a href="#orgheadline46">5.6.2. native - lowercase</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline49">5.8. Comparing words</a>
+<li><a href="#orgheadline49">5.7. Dealing with whitespaces</a>
 <ul>
-<li><a href="#orgheadline48">5.8.1. </a></li>
+<li><a href="#orgheadline48">5.7.1. native - trim</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline50">5.9. Words to Character Arrays</a></li>
+<li><a href="#orgheadline51">5.8. Comparing words</a>
+<ul>
+<li><a href="#orgheadline50">5.8.1. </a></li>
 </ul>
 </li>
-<li><a href="#orgheadline56">6. 6 - Sentences</a>
+<li><a href="#orgheadline55">5.9. Words to Character Arrays</a>
 <ul>
-<li><a href="#orgheadline54">6.1. Joining Words together</a>
-<ul>
-<li><a href="#orgheadline52">6.1.1. joining words</a></li>
-<li><a href="#orgheadline53">6.1.2. </a></li>
+<li><a href="#orgheadline52">5.9.1. core</a></li>
+<li><a href="#orgheadline53">5.9.2. native</a></li>
+<li><a href="#orgheadline54">5.9.3. cuerdas</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline55">6.2. Splitting a sentence</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline67">7. LATER</a>
+<li><a href="#orgheadline61">6. 6 - Sentences</a>
 <ul>
-<li><a href="#orgheadline57">7.1. Asking Questions from Clojure ( and Emacs? )</a></li>
-<li><a href="#orgheadline58">7.2. Importing libraries and concept of namespaces in Clojure</a></li>
-<li><a href="#orgheadline59">7.3. Regular Expressions</a></li>
-<li><a href="#orgheadline60">7.4. Code Structure and Documentation</a></li>
-<li><a href="#orgheadline63">7.5. Introduction to the DSL</a>
+<li><a href="#orgheadline59">6.1. Joining Words together</a>
 <ul>
-<li><a href="#orgheadline61">7.5.1. A basic overview of the DSL we've created to work with.</a></li>
-<li><a href="#orgheadline62">7.5.2. Need to provide a basic WordNet etc. integration for the Clojars.org package</a></li>
+<li><a href="#orgheadline57">6.1.1. joining words</a></li>
+<li><a href="#orgheadline58">6.1.2. </a></li>
 </ul>
 </li>
-<li><a href="#orgheadline66">7.6. Our Understanding of a Language</a>
+<li><a href="#orgheadline60">6.2. Splitting a sentence</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline75">7. LATER</a>
 <ul>
-<li><a href="#orgheadline64">7.6.1. The depth of chunking a language we try out.</a></li>
-<li><a href="#orgheadline65">7.6.2. Clarify that we abstract away from the Cultural Contexts in a language.</a></li>
+<li><a href="#orgheadline64">7.1. Java interop</a>
+<ul>
+<li><a href="#orgheadline62">7.1.1. introduce all the native methods in this case</a></li>
+<li><a href="#orgheadline63">7.1.2. use StanfordNLP - java as an example</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline65">7.2. Asking Questions from Clojure ( and Emacs? )</a></li>
+<li><a href="#orgheadline66">7.3. Importing libraries and concept of namespaces in Clojure</a></li>
+<li><a href="#orgheadline67">7.4. Regular Expressions</a></li>
+<li><a href="#orgheadline68">7.5. Code Structure and Documentation</a></li>
+<li><a href="#orgheadline71">7.6. Introduction to the DSL</a>
+<ul>
+<li><a href="#orgheadline69">7.6.1. A basic overview of the DSL we've created to work with.</a></li>
+<li><a href="#orgheadline70">7.6.2. Need to provide a basic WordNet etc. integration for the Clojars.org package</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline74">7.7. Our Understanding of a Language</a>
+<ul>
+<li><a href="#orgheadline72">7.7.1. The depth of chunking a language we try out.</a></li>
+<li><a href="#orgheadline73">7.7.2. Clarify that we abstract away from the Cultural Contexts in a language.</a></li>
 </ul>
 </li>
 </ul>
@@ -258,6 +281,7 @@ for the JavaScript code in this tag.
 </ul>
 </div>
 </div>
+
 <div id="outline-container-orgheadline22" class="outline-2">
 <h2 id="orgheadline22"><span class="section-number-2">1</span> 1 - Generic Introduction to Programming</h2>
 <div class="outline-text-2" id="text-1">
@@ -319,24 +343,49 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgheadline30" class="outline-2">
-<h2 id="orgheadline30"><span class="section-number-2">4</span> 4 - Alphabet</h2>
+<div id="outline-container-orgheadline32" class="outline-2">
+<h2 id="orgheadline32"><span class="section-number-2">4</span> 4 - Alphabet</h2>
 <div class="outline-text-2" id="text-4">
 </div><div id="outline-container-orgheadline29" class="outline-3">
 <h3 id="orgheadline29"><span class="section-number-3">4.1</span> Notes</h3>
 </div>
+<div id="outline-container-orgheadline31" class="outline-3">
+<h3 id="orgheadline31"><span class="section-number-3">4.2</span> Alphanumeric characters in the word</h3>
+<div class="outline-text-3" id="text-4-2">
+</div><div id="outline-container-orgheadline30" class="outline-4">
+<h4 id="orgheadline30"><span class="section-number-4">4.2.1</span> cuerdas - only alphabets in the words</h4>
+<div class="outline-text-4" id="text-4-2-1">
+<div class="org-src-container">
+
+<pre class="src src-clojure">  <span style="color: #AE81FF;">(</span>require '<span style="color: #66D9EF;">[</span><span style="color: #66D9EF;">cuerdas.core</span> <span style="color: #AE81FF;">:as</span> cuerdas<span style="color: #66D9EF;">]</span><span style="color: #AE81FF;">)</span>
+
+
+  <span style="color: #AE81FF;">(</span><span style="color: #66D9EF;">cuerdas</span><span style="color: #F8F8F2; background-color: #272822;">/</span>alpha? <span style="color: #E6DB74;">"word"</span><span style="color: #AE81FF;">)</span>
+
+
+  <span style="color: #AE81FF;">(</span><span style="color: #66D9EF;">cuerdas</span><span style="color: #F8F8F2; background-color: #272822;">/</span>alpha-numeric? <span style="color: #E6DB74;">"word 123"</span><span style="color: #AE81FF;">)</span>
+
+  <span style="color: #AE81FF;">(</span><span style="color: #66D9EF;">cuerdas</span><span style="color: #F8F8F2; background-color: #272822;">/</span>alnum? <span style="color: #E6DB74;">"word 123"</span><span style="color: #AE81FF;">)</span>
+
+<span style="color: #AE81FF;">(</span><span style="color: #66D9EF;">cuerdas</span><span style="color: #F8F8F2; background-color: #272822;">/</span>letters? <span style="color: #E6DB74;">"&#27721;&#35821;"</span><span style="color: #AE81FF;">)</span>
+</pre>
 </div>
-<div id="outline-container-orgheadline51" class="outline-2">
-<h2 id="orgheadline51"><span class="section-number-2">5</span> 5 - Word</h2>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline56" class="outline-2">
+<h2 id="orgheadline56"><span class="section-number-2">5</span> 5 - Word</h2>
 <div class="outline-text-2" id="text-5">
-</div><div id="outline-container-orgheadline31" class="outline-3">
-<h3 id="orgheadline31"><span class="section-number-3">5.1</span> Notes</h3>
+</div><div id="outline-container-orgheadline33" class="outline-3">
+<h3 id="orgheadline33"><span class="section-number-3">5.1</span> Notes</h3>
 </div>
-<div id="outline-container-orgheadline33" class="outline-3">
-<h3 id="orgheadline33"><span class="section-number-3">5.2</span> DEFINE a word</h3>
+<div id="outline-container-orgheadline35" class="outline-3">
+<h3 id="orgheadline35"><span class="section-number-3">5.2</span> DEFINE a word</h3>
 <div class="outline-text-3" id="text-5-2">
-</div><div id="outline-container-orgheadline32" class="outline-4">
-<h4 id="orgheadline32"><span class="section-number-4">5.2.1</span> defining a simple word</h4>
+</div><div id="outline-container-orgheadline34" class="outline-4">
+<h4 id="orgheadline34"><span class="section-number-4">5.2.1</span> defining a simple word</h4>
 <div class="outline-text-4" id="text-5-2-1">
 <div class="org-src-container">
 
@@ -347,11 +396,11 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline36" class="outline-3">
-<h3 id="orgheadline36"><span class="section-number-3">5.3</span> INDEX of an alphabet in a word</h3>
+<div id="outline-container-orgheadline38" class="outline-3">
+<h3 id="orgheadline38"><span class="section-number-3">5.3</span> INDEX of an alphabet in a word</h3>
 <div class="outline-text-3" id="text-5-3">
-</div><div id="outline-container-orgheadline34" class="outline-4">
-<h4 id="orgheadline34"><span class="section-number-4">5.3.1</span> using the index of the alphabet</h4>
+</div><div id="outline-container-orgheadline36" class="outline-4">
+<h4 id="orgheadline36"><span class="section-number-4">5.3.1</span> using the index of the alphabet</h4>
 <div class="outline-text-4" id="text-5-3-1">
 <div class="org-src-container">
 
@@ -361,8 +410,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline35" class="outline-4">
-<h4 id="orgheadline35"><span class="section-number-4">5.3.2</span> find the LAST index of a character</h4>
+<div id="outline-container-orgheadline37" class="outline-4">
+<h4 id="orgheadline37"><span class="section-number-4">5.3.2</span> find the LAST index of a character</h4>
 <div class="outline-text-4" id="text-5-3-2">
 <div class="org-src-container">
 
@@ -371,11 +420,11 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgheadline39" class="outline-3">
-<h3 id="orgheadline39"><span class="section-number-3">5.4</span> LENGTH of a word</h3>
+<div id="outline-container-orgheadline41" class="outline-3">
+<h3 id="orgheadline41"><span class="section-number-3">5.4</span> LENGTH of a word</h3>
 <div class="outline-text-3" id="text-5-4">
-</div><div id="outline-container-orgheadline37" class="outline-4">
-<h4 id="orgheadline37"><span class="section-number-4">5.4.1</span> get the length of a word</h4>
+</div><div id="outline-container-orgheadline39" class="outline-4">
+<h4 id="orgheadline39"><span class="section-number-4">5.4.1</span> get the length of a word</h4>
 <div class="outline-text-4" id="text-5-4-1">
 <div class="org-src-container">
 
@@ -385,8 +434,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline38" class="outline-4">
-<h4 id="orgheadline38"><span class="section-number-4">5.4.2</span> another way to check if a string is empty</h4>
+<div id="outline-container-orgheadline40" class="outline-4">
+<h4 id="orgheadline40"><span class="section-number-4">5.4.2</span> native- empty?</h4>
 <div class="outline-text-4" id="text-5-4-2">
 <div class="org-src-container">
 
@@ -397,11 +446,11 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline42" class="outline-3">
-<h3 id="orgheadline42"><span class="section-number-3">5.5</span> Get a SUBWORD</h3>
+<div id="outline-container-orgheadline44" class="outline-3">
+<h3 id="orgheadline44"><span class="section-number-3">5.5</span> Get a SUBWORD</h3>
 <div class="outline-text-3" id="text-5-5">
-</div><div id="outline-container-orgheadline40" class="outline-4">
-<h4 id="orgheadline40"><span class="section-number-4">5.5.1</span> simple subword based on an index-range SUBSTRING</h4>
+</div><div id="outline-container-orgheadline42" class="outline-4">
+<h4 id="orgheadline42"><span class="section-number-4">5.5.1</span> native - index-range SUBSTRING</h4>
 <div class="outline-text-4" id="text-5-5-1">
 <div class="org-src-container">
 
@@ -411,8 +460,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline41" class="outline-4">
-<h4 id="orgheadline41"><span class="section-number-4">5.5.2</span> SUBSEQUENCE</h4>
+<div id="outline-container-orgheadline43" class="outline-4">
+<h4 id="orgheadline43"><span class="section-number-4">5.5.2</span> native - SUBSEQUENCE</h4>
 <div class="outline-text-4" id="text-5-5-2">
 <div class="org-src-container">
 
@@ -423,11 +472,11 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline45" class="outline-3">
-<h3 id="orgheadline45"><span class="section-number-3">5.6</span> Case of a word</h3>
+<div id="outline-container-orgheadline47" class="outline-3">
+<h3 id="orgheadline47"><span class="section-number-3">5.6</span> Case of a word</h3>
 <div class="outline-text-3" id="text-5-6">
-</div><div id="outline-container-orgheadline43" class="outline-4">
-<h4 id="orgheadline43"><span class="section-number-4">5.6.1</span> uppercase</h4>
+</div><div id="outline-container-orgheadline45" class="outline-4">
+<h4 id="orgheadline45"><span class="section-number-4">5.6.1</span> native - uppercase</h4>
 <div class="outline-text-4" id="text-5-6-1">
 <div class="org-src-container">
 
@@ -437,8 +486,8 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline44" class="outline-4">
-<h4 id="orgheadline44"><span class="section-number-4">5.6.2</span> lowercase</h4>
+<div id="outline-container-orgheadline46" class="outline-4">
+<h4 id="orgheadline46"><span class="section-number-4">5.6.2</span> native - lowercase</h4>
 <div class="outline-text-4" id="text-5-6-2">
 <div class="org-src-container">
 
@@ -449,11 +498,11 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-orgheadline47" class="outline-3">
-<h3 id="orgheadline47"><span class="section-number-3">5.7</span> Dealing with whitespaces</h3>
+<div id="outline-container-orgheadline49" class="outline-3">
+<h3 id="orgheadline49"><span class="section-number-3">5.7</span> Dealing with whitespaces</h3>
 <div class="outline-text-3" id="text-5-7">
-</div><div id="outline-container-orgheadline46" class="outline-4">
-<h4 id="orgheadline46"><span class="section-number-4">5.7.1</span> trim</h4>
+</div><div id="outline-container-orgheadline48" class="outline-4">
+<h4 id="orgheadline48"><span class="section-number-4">5.7.1</span> native - trim</h4>
 <div class="outline-text-4" id="text-5-7-1">
 <div class="org-src-container">
 
@@ -463,16 +512,34 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-<div id="outline-container-orgheadline49" class="outline-3">
-<h3 id="orgheadline49"><span class="section-number-3">5.8</span> Comparing words</h3>
+<div id="outline-container-orgheadline51" class="outline-3">
+<h3 id="orgheadline51"><span class="section-number-3">5.8</span> Comparing words</h3>
 <div class="outline-text-3" id="text-5-8">
-</div><div id="outline-container-orgheadline48" class="outline-4">
-<h4 id="orgheadline48"><span class="section-number-4">5.8.1</span> </h4>
+</div><div id="outline-container-orgheadline50" class="outline-4">
+<h4 id="orgheadline50"><span class="section-number-4">5.8.1</span> </h4>
 </div>
 </div>
-<div id="outline-container-orgheadline50" class="outline-3">
-<h3 id="orgheadline50"><span class="section-number-3">5.9</span> Words to Character Arrays</h3>
+<div id="outline-container-orgheadline55" class="outline-3">
+<h3 id="orgheadline55"><span class="section-number-3">5.9</span> Words to Character Arrays</h3>
 <div class="outline-text-3" id="text-5-9">
+</div><div id="outline-container-orgheadline52" class="outline-4">
+<h4 id="orgheadline52"><span class="section-number-4">5.9.1</span> core</h4>
+<div class="outline-text-4" id="text-5-9-1">
+<div class="org-src-container">
+
+<pre class="src src-clojure"><span style="color: #AE81FF;">(</span>char <span style="color: #AE81FF;">)</span>
+<span style="color: #AE81FF;">(</span>char? <span style="color: #AE81FF;">)</span>
+<span style="color: #AE81FF;">(</span>chars<span style="color: #AE81FF;">)</span>
+<span style="color: #AE81FF;">(</span>char-array<span style="color: #AE81FF;">)</span>
+<span style="color: #AE81FF;">(</span>char-name-string<span style="color: #AE81FF;">)</span>
+<span style="color: #AE81FF;">(</span>char-escape-string<span style="color: #AE81FF;">)</span>
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgheadline53" class="outline-4">
+<h4 id="orgheadline53"><span class="section-number-4">5.9.2</span> native</h4>
+<div class="outline-text-4" id="text-5-9-2">
 <p>
 Here, the (.toCharArray ) method gives us a Java Array object
 </p>
@@ -488,15 +555,30 @@ we can deal with an Array object using ( get ) method from Clojure
 </div>
 </div>
 </div>
+<div id="outline-container-orgheadline54" class="outline-4">
+<h4 id="orgheadline54"><span class="section-number-4">5.9.3</span> cuerdas</h4>
+<div class="outline-text-4" id="text-5-9-3">
+<div class="org-src-container">
+
+<pre class="src src-clojure"> <span style="color: #AE81FF;">(</span>require '<span style="color: #66D9EF;">[</span><span style="color: #66D9EF;">cuerdas.core</span> <span style="color: #AE81FF;">:as</span> cuerdas<span style="color: #66D9EF;">]</span><span style="color: #AE81FF;">)</span>
+
+
+<span style="color: #AE81FF;">(</span><span style="color: #66D9EF;">cuerdas</span><span style="color: #F8F8F2; background-color: #272822;">/</span>chars <span style="color: #E6DB74;">"characters"</span><span style="color: #AE81FF;">)</span>
+</pre>
 </div>
-<div id="outline-container-orgheadline56" class="outline-2">
-<h2 id="orgheadline56"><span class="section-number-2">6</span> 6 - Sentences</h2>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgheadline61" class="outline-2">
+<h2 id="orgheadline61"><span class="section-number-2">6</span> 6 - Sentences</h2>
 <div class="outline-text-2" id="text-6">
-</div><div id="outline-container-orgheadline54" class="outline-3">
-<h3 id="orgheadline54"><span class="section-number-3">6.1</span> Joining Words together</h3>
+</div><div id="outline-container-orgheadline59" class="outline-3">
+<h3 id="orgheadline59"><span class="section-number-3">6.1</span> Joining Words together</h3>
 <div class="outline-text-3" id="text-6-1">
-</div><div id="outline-container-orgheadline52" class="outline-4">
-<h4 id="orgheadline52"><span class="section-number-4">6.1.1</span> joining words</h4>
+</div><div id="outline-container-orgheadline57" class="outline-4">
+<h4 id="orgheadline57"><span class="section-number-4">6.1.1</span> joining words</h4>
 <div class="outline-text-4" id="text-6-1-1">
 <div class="org-src-container">
 
@@ -519,12 +601,12 @@ we can deal with an Array object using ( get ) method from Clojure
 </div>
 
 
-<div id="outline-container-orgheadline53" class="outline-4">
-<h4 id="orgheadline53"><span class="section-number-4">6.1.2</span> </h4>
+<div id="outline-container-orgheadline58" class="outline-4">
+<h4 id="orgheadline58"><span class="section-number-4">6.1.2</span> </h4>
 </div>
 </div>
-<div id="outline-container-orgheadline55" class="outline-3">
-<h3 id="orgheadline55"><span class="section-number-3">6.2</span> Splitting a sentence</h3>
+<div id="outline-container-orgheadline60" class="outline-3">
+<h3 id="orgheadline60"><span class="section-number-3">6.2</span> Splitting a sentence</h3>
 <div class="outline-text-3" id="text-6-2">
 <div class="org-src-container">
 
@@ -534,46 +616,56 @@ we can deal with an Array object using ( get ) method from Clojure
 </div>
 </div>
 </div>
-<div id="outline-container-orgheadline67" class="outline-2">
-<h2 id="orgheadline67"><span class="section-number-2">7</span> LATER</h2>
+<div id="outline-container-orgheadline75" class="outline-2">
+<h2 id="orgheadline75"><span class="section-number-2">7</span> LATER</h2>
 <div class="outline-text-2" id="text-7">
-</div><div id="outline-container-orgheadline57" class="outline-3">
-<h3 id="orgheadline57"><span class="section-number-3">7.1</span> Asking Questions from Clojure ( and Emacs? )</h3>
+</div><div id="outline-container-orgheadline64" class="outline-3">
+<h3 id="orgheadline64"><span class="section-number-3">7.1</span> Java interop</h3>
+<div class="outline-text-3" id="text-7-1">
+</div><div id="outline-container-orgheadline62" class="outline-4">
+<h4 id="orgheadline62"><span class="section-number-4">7.1.1</span> introduce all the native methods in this case</h4>
 </div>
-<div id="outline-container-orgheadline58" class="outline-3">
-<h3 id="orgheadline58"><span class="section-number-3">7.2</span> Importing libraries and concept of namespaces in Clojure</h3>
+<div id="outline-container-orgheadline63" class="outline-4">
+<h4 id="orgheadline63"><span class="section-number-4">7.1.2</span> use StanfordNLP - java as an example</h4>
 </div>
-<div id="outline-container-orgheadline59" class="outline-3">
-<h3 id="orgheadline59"><span class="section-number-3">7.3</span> Regular Expressions</h3>
 </div>
-<div id="outline-container-orgheadline60" class="outline-3">
-<h3 id="orgheadline60"><span class="section-number-3">7.4</span> Code Structure and Documentation</h3>
-</div>
-<div id="outline-container-orgheadline63" class="outline-3">
-<h3 id="orgheadline63"><span class="section-number-3">7.5</span> Introduction to the DSL</h3>
-<div class="outline-text-3" id="text-7-5">
-</div><div id="outline-container-orgheadline61" class="outline-4">
-<h4 id="orgheadline61"><span class="section-number-4">7.5.1</span> A basic overview of the DSL we've created to work with.</h4>
-</div>
-<div id="outline-container-orgheadline62" class="outline-4">
-<h4 id="orgheadline62"><span class="section-number-4">7.5.2</span> Need to provide a basic WordNet etc. integration for the Clojars.org package</h4>
-</div>
+<div id="outline-container-orgheadline65" class="outline-3">
+<h3 id="orgheadline65"><span class="section-number-3">7.2</span> Asking Questions from Clojure ( and Emacs? )</h3>
 </div>
 <div id="outline-container-orgheadline66" class="outline-3">
-<h3 id="orgheadline66"><span class="section-number-3">7.6</span> Our Understanding of a Language</h3>
-<div class="outline-text-3" id="text-7-6">
-</div><div id="outline-container-orgheadline64" class="outline-4">
-<h4 id="orgheadline64"><span class="section-number-4">7.6.1</span> The depth of chunking a language we try out.</h4>
+<h3 id="orgheadline66"><span class="section-number-3">7.3</span> Importing libraries and concept of namespaces in Clojure</h3>
 </div>
-<div id="outline-container-orgheadline65" class="outline-4">
-<h4 id="orgheadline65"><span class="section-number-4">7.6.2</span> Clarify that we abstract away from the Cultural Contexts in a language.</h4>
+<div id="outline-container-orgheadline67" class="outline-3">
+<h3 id="orgheadline67"><span class="section-number-3">7.4</span> Regular Expressions</h3>
+</div>
+<div id="outline-container-orgheadline68" class="outline-3">
+<h3 id="orgheadline68"><span class="section-number-3">7.5</span> Code Structure and Documentation</h3>
+</div>
+<div id="outline-container-orgheadline71" class="outline-3">
+<h3 id="orgheadline71"><span class="section-number-3">7.6</span> Introduction to the DSL</h3>
+<div class="outline-text-3" id="text-7-6">
+</div><div id="outline-container-orgheadline69" class="outline-4">
+<h4 id="orgheadline69"><span class="section-number-4">7.6.1</span> A basic overview of the DSL we've created to work with.</h4>
+</div>
+<div id="outline-container-orgheadline70" class="outline-4">
+<h4 id="orgheadline70"><span class="section-number-4">7.6.2</span> Need to provide a basic WordNet etc. integration for the Clojars.org package</h4>
+</div>
+</div>
+<div id="outline-container-orgheadline74" class="outline-3">
+<h3 id="orgheadline74"><span class="section-number-3">7.7</span> Our Understanding of a Language</h3>
+<div class="outline-text-3" id="text-7-7">
+</div><div id="outline-container-orgheadline72" class="outline-4">
+<h4 id="orgheadline72"><span class="section-number-4">7.7.1</span> The depth of chunking a language we try out.</h4>
+</div>
+<div id="outline-container-orgheadline73" class="outline-4">
+<h4 id="orgheadline73"><span class="section-number-4">7.7.2</span> Clarify that we abstract away from the Cultural Contexts in a language.</h4>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: abhinav</p>
-<p class="date">Created: 2016-10-24 Mon 18:13</p>
+<p class="date">Created: 2016-10-24 Mon 19:15</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -1,3 +1,5 @@
+#+SETUPFILE: org-html-themes/setup/theme-readtheorg-local.setup
+
 * 1 - Generic Introduction to Programming
 ** Notes
 *** Basic Introduction to Programming Languages 
@@ -41,12 +43,12 @@
   (cuerdas/alpha-numeric? "word 123")
 
   (cuerdas/alnum? "word 123")
+
+(cuerdas/letters? "汉语")
 #+END_SRC
 
 #+RESULTS:
 : niltruefalsefalse
-
-
 
 * 5 - Word
 ** Notes
@@ -62,7 +64,6 @@
 : #'user/word
 
 ** INDEX of an alphabet in a word
-
 *** using the index of the alphabet
 #+BEGIN_SRC clojure
 (.indexOf  word "o")
@@ -78,7 +79,6 @@
 
 #+END_SRC
 ** LENGTH of a word
-
 *** get the length of a word
 #+BEGIN_SRC clojure
 (.length  word)
@@ -98,7 +98,6 @@
 : false
 
 ** Get a SUBWORD
-
 *** native - index-range SUBSTRING
 #+BEGIN_SRC clojure
 
