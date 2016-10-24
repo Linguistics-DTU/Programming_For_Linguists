@@ -1,6 +1,25 @@
 * 1 - Generic Introduction to Programming
 ** Notes
-*** 
+*** Basic Introduction to Programming Languages 
+**** Python/Anaconda
+**** Haskell
+**** Visualization - ClojureScript
+**** Java - OpenNLP
+*** Introduction to CodeSharing and Community
+**** Git
+**** GitHub
+**** GitLab
+**** Pages
+*** DataBases
+**** SQLite3
+**** Mongo
+**** Neo4J
+**** MySQL
+**** Redis **
+*** Leading to Good resources in 
+**** Artificial Intelligence
+**** Foundations of Computing
+**** Data Science
 * 2 - Introduction to Clojure
 ** Notes
 * 3 - Setting up the Lab
@@ -9,6 +28,26 @@
 *** Later on we just move on to FileSystem/API/WebPage based work
 * 4 - Alphabet
 ** Notes
+** Alphanumeric characters in the word
+*** cuerdas - only alphabets in the words
+
+#+BEGIN_SRC clojure
+  (require '[cuerdas.core :as cuerdas])
+
+
+  (cuerdas/alpha? "word")
+
+
+  (cuerdas/alpha-numeric? "word 123")
+
+  (cuerdas/alnum? "word 123")
+#+END_SRC
+
+#+RESULTS:
+: niltruefalsefalse
+
+
+
 * 5 - Word
 ** Notes
 ** DEFINE a word
@@ -49,7 +88,7 @@
 #+RESULTS:
 : 4
 
-*** another way to check if a string is empty
+*** native- empty? 
 #+BEGIN_SRC clojure
 (.isEmpty word)
 
@@ -60,7 +99,7 @@
 
 ** Get a SUBWORD
 
-*** simple subword based on an index-range SUBSTRING
+*** native - index-range SUBSTRING
 #+BEGIN_SRC clojure
 
 (.substring word 1 3)
@@ -70,7 +109,7 @@
 #+RESULTS:
 : or
 
-*** SUBSEQUENCE
+*** native - SUBSEQUENCE
 
 #+BEGIN_SRC clojure
 (.subSequence word 1 3)
@@ -80,7 +119,7 @@
 : or
 
 ** Case of a word
-*** uppercase
+*** native - uppercase
 #+BEGIN_SRC clojure
 (.toUpperCase word)
 
@@ -89,7 +128,7 @@
 #+RESULTS:
 : WORD
 
-*** lowercase
+*** native - lowercase
 #+BEGIN_SRC clojure
 (.toLowerCase word)
 
@@ -99,7 +138,7 @@
 : word
 
 ** Dealing with whitespaces
-*** trim
+*** native - trim
 #+BEGIN_SRC clojure
 (.trim "   word  ")
 
@@ -107,8 +146,20 @@
 
 #+RESULTS:
 : word
+** Comparing words
+*** 
 ** Words to Character Arrays
+*** core
+#+BEGIN_SRC clojure
+(char )
+(char? )
+(chars)
+(char-array)
+(char-name-string)
+(char-escape-string)
 
+#+END_SRC
+*** native
 Here, the (.toCharArray ) method gives us a Java Array object
 
 we can deal with an Array object using ( get ) method from Clojure
@@ -117,11 +168,50 @@ we can deal with an Array object using ( get ) method from Clojure
 
 (get (.toCharArray "word") 0)
 
+
 #+END_SRC
 
 #+RESULTS:
 : \w
+*** cuerdas
+
+#+BEGIN_SRC clojure
+ (require '[cuerdas.core :as cuerdas])
+
+
+(cuerdas/chars "characters")
+
+#+END_SRC
+
+#+RESULTS:
+: nil["c" "h" "a" "r" "a" "c" "t" "e" "r" "s" " " "i" "n" " "]
+
 * 6 - Sentences
+** Joining Words together
+*** joining words
+#+BEGIN_SRC clojure
+(.concat "a" "b")
+
+#+END_SRC
+
+#+RESULTS:
+: ab
+
+
+#+BEGIN_SRC clojure
+
+#+END_SRC
+
+#+BEGIN_SRC clojure
+(str "a" "b" "c")
+
+#+END_SRC
+
+#+RESULTS:
+: abc
+
+
+*** 
 ** Splitting a sentence
 #+BEGIN_SRC clojure
 
@@ -132,5 +222,17 @@ we can deal with an Array object using ( get ) method from Clojure
 
 #+RESULTS:
 : bond
-
-* Regular Expressions
+* LATER
+** Java interop 
+*** introduce all the native methods in this case
+*** use StanfordNLP - java as an example
+** Asking Questions from Clojure ( and Emacs? )
+** Importing libraries and concept of namespaces in Clojure
+** Regular Expressions
+** Code Structure and Documentation
+** Introduction to the DSL 
+*** A basic overview of the DSL we've created to work with.
+*** Need to provide a basic WordNet etc. integration for the Clojars.org package
+** Our Understanding of a Language
+*** The depth of chunking a language we try out.
+*** Clarify that we abstract away from the Cultural Contexts in a language.
