@@ -24,6 +24,9 @@
 **** Data Science
 * 2 - Introduction to Clojure
 ** Notes
+** Minimal buildling blocks of logic
+*** conditions/ relationals/ booleans/loops
+*** recursion - hint that we'll return to it again later
 * 3 - Setting up the Lab
 ** Notes
 *** Setting up the Clojure and focusing initially only on the REPL
@@ -59,7 +62,6 @@
 
 #+RESULTS:
 : niltruefalsefalse
-
 * 5 - Word
 ** Notes
 ** DEFINE a word
@@ -194,7 +196,6 @@ we can deal with an Array object using ( get ) method from Clojure
 
 #+RESULTS:
 : nil["c" "h" "a" "r" "a" "c" "t" "e" "r" "s" " " "i" "n" " "]
-
 * 6 - Sentences
 ** Joining Words together
 *** joining words
@@ -356,7 +357,7 @@ reversible?
 #+END_SRC
 ** Vector
 ** Map
-** Set(def 
+** Set
 * 8 - Algorithms
 ** Algorithms Unlocked
 ** 
