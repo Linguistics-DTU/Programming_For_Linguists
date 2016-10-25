@@ -1,3 +1,5 @@
-cats.pdf filter=lfs diff=lfs merge=lfs -text
-cuerdas.pdf filter=lfs diff=lfs merge=lfs -text
 screenshot.png filter=lfs diff=lfs merge=lfs -text
+references/ClojureScript[[:space:]]Cheatsheet.pdf filter=lfs diff=lfs merge=lfs -text
+references/cats.pdf filter=lfs diff=lfs merge=lfs -text
+references/cheatsheet-usletter-color.pdf filter=lfs diff=lfs merge=lfs -text
+references/cuerdas.pdf filter=lfs diff=lfs merge=lfs -text
