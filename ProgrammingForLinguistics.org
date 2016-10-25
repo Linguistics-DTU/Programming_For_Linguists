@@ -232,6 +232,7 @@ we can deal with an Array object using ( get ) method from Clojure
 #+RESULTS:
 : bond
 * 7 - Data Structures 
+- Also explore the functions listed in Sequences in the cheat sheet
 ** List
 - they grow at the head
 *** Creating lists
@@ -254,6 +255,8 @@ we can deal with an Array object using ( get ) method from Clojure
 (rest ls)
 (last ls)
 (peek ls)
+
+
 
 #+END_SRC
 
