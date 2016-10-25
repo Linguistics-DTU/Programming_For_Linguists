@@ -322,9 +322,32 @@ not-any?
 
 #+END_SRC
 
-*** stuff from walk
+*** stuff from clojure.walk - no idea what this does?!!
 
 #+BEGIN_SRC clojure
+
+(use '[clojure.walk :as walk])
+
+walk
+prewalk
+prewalk-demo
+prewalk-replace
+
+postwalk
+postwalk-demo
+postwalk-replace
+
+#+END_SRC
+
+*** capabilities
+
+#+BEGIN_SRC clojure
+
+sequential?
+associative?
+sorted?
+counted?
+reversible?
 
 
 #+END_SRC
@@ -333,7 +356,7 @@ not-any?
 ** Set(def 
 * 8 - Algorithms
 ** Algorithms Unlocked
-*** 
+** 
 * LATER
 ** More on Clojure and LISP as it's heritage
 ** Introduction to the DSL 
