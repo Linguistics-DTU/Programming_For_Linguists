@@ -231,6 +231,109 @@ we can deal with an Array object using ( get ) method from Clojure
 
 #+RESULTS:
 : bond
+* 7 - Data Structures 
+** List
+- they grow at the head
+*** Creating lists
+
+#+BEGIN_SRC clojure
+
+(def ls (list "this" "is" "a" "list"))
+
+
+#+END_SRC
+
+#+RESULTS:
+: #'user/ls("this" "is" "a" "list")
+*** getting elements of the list
+
+#+BEGIN_SRC clojure
+
+(peek ls)
+(first ls)
+(rest ls)
+(last ls)
+(peek ls)
+
+#+END_SRC
+
+#+RESULTS:
+: this
+
+*** dropping n items
+
+#+BEGIN_SRC clojure
+
+(drop 3 ls)
+
+#+END_SRC
+
+#+RESULTS:
+| list |
+
+*** finding elements in the list 
+#+BEGIN_SRC clojure
+
+(.indexOf "a" ls)
+
+(.lastIndexOf "a" ls)
+
+#+END_SRC
+
+#+RESULTS:
+*** the empty list
+#+BEGIN_SRC clojure
+
+(list? ())
+
+#+END_SRC
+
+#+RESULTS:
+: true
+
+*** building up from empty lists
+- doesn't really matter if we quote it or not
+
+#+BEGIN_SRC clojure
+
+(cons 'a ())
+
+#+END_SRC
+
+#+RESULTS:
+| a |
+
+*** general native functions for collections/sequences
+
+#+BEGIN_SRC clojure
+
+count 
+empty
+not-empty
+into 
+conj
+
+distinct?
+every?
+empty?
+not-every?
+some
+not-any?
+
+#+END_SRC
+
+*** stuff from walk
+
+#+BEGIN_SRC clojure
+
+
+#+END_SRC
+** Vector
+** Map
+** Set(def 
+* 8 - Algorithms
+** Algorithms Unlocked
+*** 
 * LATER
 ** More on Clojure and LISP as it's heritage
 ** Introduction to the DSL 
@@ -247,3 +350,7 @@ we can deal with an Array object using ( get ) method from Clojure
 ** Our Understanding of a Language
 *** The depth of chunking a language we try out.
 *** Clarify that we abstract away from the Cultural Contexts in a language.
+** How to design programs
+** sicp
+** introduction to algorithms
+** Algorithms - cormen
