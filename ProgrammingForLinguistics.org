@@ -232,16 +232,18 @@ we can deal with an Array object using ( get ) method from Clojure
 #+RESULTS:
 : bond
 * LATER
+** More on Clojure and LISP as it's heritage
+** Introduction to the DSL 
+*** A basic overview of the DSL we've created to work with.
+*** Need to provide a basic WordNet etc. integration for the Clojars.org package
 ** Java interop 
 *** introduce all the native methods in this case
 *** use StanfordNLP - java as an example
+** Language Construction Kit and simulations based on that book
 ** Asking Questions from Clojure ( and Emacs? )
 ** Importing libraries and concept of namespaces in Clojure
 ** Regular Expressions
 ** Code Structure and Documentation
-** Introduction to the DSL 
-*** A basic overview of the DSL we've created to work with.
-*** Need to provide a basic WordNet etc. integration for the Clojars.org package
 ** Our Understanding of a Language
 *** The depth of chunking a language we try out.
 *** Clarify that we abstract away from the Cultural Contexts in a language.
