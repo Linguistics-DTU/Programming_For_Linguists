@@ -24,6 +24,7 @@
 **** Data Science
 * 2 - Introduction to Clojure
 ** Notes
+*** On a personal note, the best thing about Lisp is that it builds a solution from bottom up - and for creators of a systems it's - I believe ideal , however to understand another system - the top-down approach is the one that prevails - read from top-down and read a lot!
 ** Minimal buildling blocks of logic
 *** conditions/ relationals/ booleans/loops
 *** recursion - hint that we'll return to it again later
@@ -195,7 +196,7 @@ we can deal with an Array object using ( get ) method from Clojure
 #+END_SRC
 
 #+RESULTS:
-: nil["c" "h" "a" "r" "a" "c" "t" "e" "r" "s" " " "i" "n" " "]
+: nil["c" "h" "a" "r" "a" "c" "t" "e" "r" "s" " " "i" "n" " "] 
 * 6 - Sentences
 ** Joining Words together
 *** joining words
@@ -360,7 +361,42 @@ reversible?
 ** Set
 * 8 - Algorithms
 ** Algorithms Unlocked
-** 
+*** ch1 - pg28 - Linear Search
+
+#+BEGIN_SRC clojure
+
+  (def ls '("this" "is" "a" "list"))
+  (for [x (range (length-of-list ls))]
+          (println ( nth ls x)))
+
+#+END_SRC
+
+#+RESULTS:
+: #'user/ls(nil nil nil nil)
+
+**** Linear Search
+- we don't know what exactly a symbol is
+- we need to look into a 
+#+BEGIN_SRC clojure
+  (def ls '("this" "is" "a" "list"))
+
+  (def look-up (read-line))
+
+  (defn length-of-list [ls]
+    (count ls))
+
+
+  (for [x (range (length-of-list ls))]
+    (if ( = look-up  ( nth ls x))
+      x
+      nil
+      ))
+#+END_SRC
+
+#+RESULTS:
+: #'user/ls#'user/look-up#'user/length-of-a-list(nil 1 nil nil)
+
+*** 
 * LATER
 ** More on Clojure and LISP as it's heritage
 ** Introduction to the DSL 
