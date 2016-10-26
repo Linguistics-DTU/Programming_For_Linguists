@@ -303,6 +303,8 @@ we can deal with an Array object using ( get ) method from Clojure
 
 (cons 'a ())
 
+(conj 'ls '("cons"))
+(concat ls '("cons"))
 #+END_SRC
 
 #+RESULTS:
@@ -359,9 +361,10 @@ reversible?
 ** Vector
 ** Map
 ** Set
-* 8 - Algorithms
+* 8 - Algorithms from books
 ** Algorithms Unlocked
-*** ch1 - pg28 - Linear Search
+*** ch2 
+**** pg28 - Linear Search
 
 #+BEGIN_SRC clojure
 
@@ -374,7 +377,7 @@ reversible?
 #+RESULTS:
 : #'user/ls(nil nil nil nil)
 
-**** Linear Search
+***** Linear Search
 - we don't know what exactly a symbol is
 - we need to look into a 
 #+BEGIN_SRC clojure
@@ -396,7 +399,9 @@ reversible?
 #+RESULTS:
 : #'user/ls#'user/look-up#'user/length-of-a-list(nil 1 nil nil)
 
-*** 
+**** pg29 - better linear search
+**** pg30 - sentinel linear search
+* 9 - Algorithms for Linguists
 * LATER
 ** More on Clojure and LISP as it's heritage
 ** Introduction to the DSL 
