@@ -1,6 +1,6 @@
 * 
 
-
+ There are five kinds of strings in groovy
 
 
 #+BEGIN_SRC groovy
@@ -11,7 +11,50 @@ Pattern myRegex = ~/regex/
 
 Matcher myMatcher = 'subject' =~ /regex/
 
+Matcher myMatcher = Pattern.compile(/regex/).matcher("subject")
 
 
 
 #+END_SRC
+
+
+** \b is word boundary
+
+#+BEGIN_SRC groovy
+
+def shoutedWord = ~/\b[A-Z]+\b/
+
+def matcher = ("EUREKA" =~ shoutedWord)
+
+assert matcher.matches()
+
+def numberMatches = "1234" =~ /\d+/
+
+assert numberMatches.matches()
+
+#+END_SRC
+
+
+
+** This is another useful operator 
+   ==~
+ #+BEGIN_SRC groovy
+
+assert "1234" ==~ /\d+/
+
+assert "FOO" ==~ /\d+/
+ 
+ #+END_SRC
+
+
+* 
+#+BEGIN_SRC bash
+
+cat text.txt| groovyclient -np -e "line.replaceAll("\a","\A")"
+
+gvcl -pi -e 'line.replaceAll("A","a")' 4.txt
+
+#+END_SRC
+
+
+* COUNT and LINE variables are available for `groovy -e ` script options
