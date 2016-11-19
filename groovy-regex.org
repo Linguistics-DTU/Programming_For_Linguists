@@ -1,0 +1,17 @@
+* 
+
+
+
+
+#+BEGIN_SRC groovy
+
+Pattern myRegex = ~/regex/
+
+
+
+Matcher myMatcher = 'subject' =~ /regex/
+
+
+
+
+#+END_SRC
